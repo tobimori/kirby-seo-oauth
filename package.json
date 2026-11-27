@@ -1,0 +1,35 @@
+{
+  "name": "kirby-seo-oauth",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Google OAuth proxy for Kirby SEO, as a Cloudflare Worker",
+  "homepage": "https://github.com/tobimori/kirby-seo-oauth#readme",
+  "bugs": {
+    "url": "https://github.com/tobimori/kirby-seo-oauth/issues"
+  },
+  "license": "MIT",
+  "author": "Tobias Möritz <tobias@moeritz.io>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobimori/kirby-seo-oauth.git"
+  },
+  "type": "module",
+  "scripts": {
+    "check": "vp check",
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "fix": "vp check --fix",
+    "prepare": "effect-tsgo patch --typescript --oxlint"
+  },
+  "dependencies": {
+    "effect": "4.1.5"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261123.1",
+    "@effect/tsgo": "^0.73.4",
+    "typescript": "7.0.2",
+    "vite-plus": "^1.7.0",
+    "wrangler": "^4.166.0"
+  },
+  "packageManager": "pnpm@12.16.1"
+}

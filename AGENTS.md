@@ -1,0 +1,4 @@
+- Before you write Effect code, read `node_modules/effect/AGENTS.md` completely. For APIs that it does not cover, search `node_modules/effect/src`
+- `pnpm dev` starts the Worker with `wrangler dev` on `http://localhost:8787`. Copy `.dev.vars.example` to `.dev.vars` first
+- `pnpm check` formats, lints, and type checks. `pnpm fix` fixes what it can
+- The license server private key is not in this repo. To test with a valid license, sign one with `openssl_sign` over the PHP `json_encode` (with `JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE`) of the signed fields, as `LicenseFileGenerator` in the license server does

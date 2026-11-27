@@ -1,0 +1,4 @@
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+# base64url, at least 32 bytes: openssl rand -base64 32 | tr '+/' '-_' | tr -d '='
+STATE_SECRET=

@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "kirby-seo-oauth",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-11-19",
+  "minify": true,
+  "observability": {
+    "enabled": true,
+    "logs": {
+      // invocation logs contain the request URL, and the callback URL contains the authorization code
+      "invocation_logs": false,
+    },
+  },
+}

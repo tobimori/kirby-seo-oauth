@@ -1,0 +1,22 @@
+{
+  "$schema": "https://t3.codes/schema/t3.json",
+  "scripts": [
+    {
+      "name": "Setup",
+      "command": "pnpm install && cp -n .dev.vars.example .dev.vars",
+      "icon": "configure",
+      "runOnWorktreeCreate": true,
+      "async": false
+    },
+    {
+      "name": "Worker dev server",
+      "command": "pnpm dev",
+      "icon": "play"
+    },
+    {
+      "name": "Check",
+      "command": "pnpm check",
+      "icon": "lint"
+    }
+  ]
+}
